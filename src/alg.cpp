@@ -3,7 +3,7 @@
 #include <map>
 #include "tstack.h"
 
-int prior(char o){
+int prior(char o) {
   switch (o) {
     case '(': return 0;
     case ')': return 1;
@@ -14,15 +14,16 @@ int prior(char o){
   }
 }
 
-int calcul(char op,int a,int b){
-  switch (op){
+int calcul(char op, int a, int b) {
+  switch (op) {
     case '+': return (b + a);
     case '-': return (b - a);
     case '*': return (b * a);
-    case '/':
-      if (a != 0)
+    case '/': 
+      if (a != 0) {
         return b / a;
-        default: return 0;
+      }
+    default: return 0;
   }
 }
 
