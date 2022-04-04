@@ -20,9 +20,8 @@ int calcul(char op, int a, int b) {
     case '-': return (b - a);
     case '*': return (b * a);
     case '/': 
-      if (a != 0) {
+      if (a != 0)
         return b / a;
-      }
     default: return 0;
   }
 }
